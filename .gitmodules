@@ -22,8 +22,8 @@
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/tComment"]
-	path = vim/bundle/tComment
+[submodule "vim/bundle/tComment.git"]
+	path = vim/bundle/tComment.git
 	url = https://github.com/vim-scripts/tComment.git
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
@@ -52,15 +52,12 @@
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "vim/bundle/taglist.vim"]
-	path = vim/bundle/taglist.vim
+[submodule "vim/bundle/taglist"]
+	path = vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "vim/bundle/zencoding-vim"]
 	path = vim/bundle/zencoding-vim
 	url = https://github.com/mattn/zencoding-vim.git
-[submodule "vim/bundle/vim-autocomplpop"]
-	path = vim/bundle/vim-autocomplpop
-	url = https://github.com/toupeira/vim-autocomplpop.git
 [submodule "vim/bundle/vim-tomorrow-theme"]
 	path = vim/bundle/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
