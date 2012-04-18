@@ -1,0 +1,29 @@
+[push]
+  default = tracking
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[user]
+	name = Claudio Ortolina
+	email = claudio@jumpzero.com
+[mergetool]
+	keepBackup = true
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	excludesfile = /Users/cloud/.gitignore_global
+[alias]
+	s = status --short
+	tags = !.git/hooks/tags
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+[init]
+	templatedir = ~/.git_template
