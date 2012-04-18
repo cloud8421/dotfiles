@@ -7,6 +7,9 @@ let mapleader="§"
 " NERDTree
 map <leader>3 :NERDTreeToggle<CR>
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " Fixes pasting
 noremap <leader>y "*y
 noremap <leader>p :set paste<CR>"*p<CR>:set nopaste<CR>
@@ -42,6 +45,9 @@ vmap <C-Down> xp`[V`]
 vmap <C-Right> >gv
 vmap <C-Left> <gv
 
+"Tabularize
+vmap <silent> <leader>a :Tabularize /\|<CR>
+
 "Surround
 map <leader>s ysiw
 
@@ -53,5 +59,5 @@ nmap <silent> <leader>1 :CtrlP<cr>
 nmap <silent> <Leader>2 :CtrlPBuffer<cr>
 
 "tab navigation
-nmap <silent> <leader><Left> :tabprevious<cr>
-nmap <silent> <leader><Right> :tabnext<cr>
+nmap <silent> <Left> :tabprevious<cr>
+nmap <silent> <Right> :tabnext<cr>
