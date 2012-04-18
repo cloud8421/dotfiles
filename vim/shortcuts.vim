@@ -4,6 +4,9 @@ set mouse=a
 "Change leader key
 let mapleader="§"
 
+" NERDTree
+map <leader>3 :NERDTreeToggle<CR>
+
 " Fixes pasting
 noremap <leader>y "*y
 noremap <leader>p :set paste<CR>"*p<CR>:set nopaste<CR>
