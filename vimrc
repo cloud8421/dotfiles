@@ -50,4 +50,4 @@ source $HOME/.vim/plugins.vim
 source $HOME/.vim/shortcuts.vim
 source $HOME/.vim/syntax.vim
 source $HOME/.vim/tmux.vim
-source $HOME/.vim/visual.vim
+source $HOME/.vim/visual_fixes.vim

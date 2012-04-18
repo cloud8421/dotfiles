@@ -88,3 +88,6 @@
 [submodule "vim/bundle/vim-turbux"]
 	path = vim/bundle/vim-turbux
 	url = https://github.com/jgdavey/vim-turbux
+[submodule "vim/bundle/vim-autocomplpop"]
+	path = vim/bundle/vim-autocomplpop
+	url = https://github.com/toupeira/vim-autocomplpop.git
