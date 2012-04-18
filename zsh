@@ -1,1 +1,0 @@
-/Users/cloud/Tools/dotfiles/zsh
