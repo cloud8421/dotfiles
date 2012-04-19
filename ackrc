@@ -1,4 +1,5 @@
 --type-add=ruby=.haml,.rake,.ru,.palette
+--type-add=vim=.vim,.snippets
 --type-add=html=.html.erb,.html.slim,.html.haml,.mustache,.jst,.ejs
 --type-add=js=.js.erb,.coffee
 --type-add=css=.sass,.less,.scss
