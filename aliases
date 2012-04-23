@@ -25,5 +25,5 @@ alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
 
-alias tags="/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude='*.js' -f ./tags *"
+alias tags="/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude='*.js' -f ./.tags *"
 alias sp="mdfind -onlyin ./ -name"
