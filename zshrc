@@ -88,17 +88,4 @@ unsetopt correct_all
    z --add "$(pwd -P)"
  }
 
-# zle-line-init() {
-#   # Reset correctall in case finish unset it
-#   setopt no_localoptions correctall
-# }
-# zle-line-finish() {
-#   if [[ $BUFFER = (${~CORRECTALL_IGNORE})* ]]
-#   then setopt no_localoptions no_correctall
-#   fi
-# }
-# zle -N zle-line-init
-# zle -N zle-line-finish
-# 
-# CORRECTALL_IGNORE="git flow feature | rvm use | git | bundle exec rspec"
 source "`brew --prefix grc`/etc/grc.bashrc"
