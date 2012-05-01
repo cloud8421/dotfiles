@@ -71,7 +71,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="norm"
+export ZSH_THEME="suvash"
 # export ZSH_THEME="nebirhos"
 # Node JS settings
 export NODE_PATH="/usr/local/lib/node"
