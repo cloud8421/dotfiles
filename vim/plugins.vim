@@ -1,6 +1,6 @@
 "Ctrlp configuration
 let g:ctrlp_working_path_mode = 2
-set wildignore+=*/.hg/*,*/.svn/*,*/vendor/cache/*
+set wildignore+=*/.hg/*,*/.svn/*,*/vendor/cache/*,*/public/system/*,*/tmp/*,*/log/*
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 

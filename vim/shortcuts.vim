@@ -56,7 +56,7 @@ imap § <C-n>
 
 "Ctrlp shortcuts
 nmap <silent> <leader>1 :CtrlP<cr>
-nmap <silent> <Leader>2 :CtrlPBuffer<cr>
+nmap <silent> <Leader>2 :CtrlPTag<cr>
 
 "tab navigation
 nmap <silent> <Left> :tabprevious<cr>
@@ -65,3 +65,10 @@ nmap <silent> <Right> :tabnext<cr>
 "swap panes layout
 nmap <F9> <C-w>t<C-w>H
 nmap <F10> <C-w>t<C-w>K
+
+"enable . in visual mode
+vnoremap . :norm.<CR>
+
+"Fixes end of line movement in visual mode
+vmap $ g_
+
