@@ -109,3 +109,24 @@
 [submodule "vim/bundle/autocorrect.vim"]
 	path = vim/bundle/autocorrect.vim
 	url = https://github.com/vim-scripts/autocorrect.vim
+[submodule "vim/bundle/vylight"]
+	path = vim/bundle/vylight
+	url = https://github.com/vim-scripts/vylight.git
+[submodule "vim/bundle/vydark"]
+	path = vim/bundle/vydark
+	url = https://github.com/vim-scripts/vydark.git
+[submodule "vim/bundle/vim-unimpaired"]
+	path = vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim/bundle/vim-vspec"]
+	path = vim/bundle/vim-vspec
+	url = https://github.com/kana/vim-vspec.git
+[submodule "vim/bundle/badwolf"]
+	path = vim/bundle/badwolf
+	url = https://github.com/sjl/badwolf.git
+[submodule "vim/bundle/jellybeans.vim"]
+	path = vim/bundle/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "vim/bundle/mustache.vim"]
+	path = vim/bundle/mustache.vim
+	url = https://github.com/juvenn/mustache.vim
