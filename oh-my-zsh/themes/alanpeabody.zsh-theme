@@ -1,6 +1,5 @@
-
 local user='%{$fg[magenta]%}%n@%{$fg[magenta]%}%m%{$reset_color%}'
-local pwd='%{$fg[blue]%}%~%{$reset_color%}'
+local pwd='%{$fg[blue]%}%~ %{$reset_color%}'
 local rvm=''
 if which rvm-prompt &> /dev/null; then
   rvm='%{$fg[green]%}‹$(rvm-prompt i v g)›%{$reset_color%}'
@@ -24,5 +23,5 @@ ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
 
-PROMPT="${user} ${pwd}$ "
+PROMPT="%{$fg[yellow]∆%} ${pwd}$ "
 RPROMPT="${return_code} ${git_branch} ${rvm}"
