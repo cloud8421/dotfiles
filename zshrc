@@ -18,6 +18,11 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
+# paths - the sourced file is not available in the repo
+if [ -e "$HOME/.paths" ]; then
+  source "$HOME/.paths"
+fi
+
 # vi mode
 bindkey -v
 bindkey "^F" vi-cmd-mode
@@ -71,7 +76,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="suvash"
+export ZSH_THEME="alanpeabody"
 # export ZSH_THEME="nebirhos"
 # Node JS settings
 export NODE_PATH="/usr/local/lib/node"
