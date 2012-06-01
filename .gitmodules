@@ -130,3 +130,6 @@
 [submodule "vim/bundle/mustache.vim"]
 	path = vim/bundle/mustache.vim
 	url = https://github.com/juvenn/mustache.vim
+[submodule "vim/bundle/autolink.vim"]
+	path = vim/bundle/autolink.vim
+	url = https://github.com/sampsyo/autolink.vim

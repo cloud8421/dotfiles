@@ -52,3 +52,4 @@ source $HOME/.vim/syntax.vim
 source $HOME/.vim/tmux.vim
 source $HOME/.vim/visual_fixes.vim
 source $HOME/.vim/spell_fixes.vim
+source $HOME/.vim/rails.vim
