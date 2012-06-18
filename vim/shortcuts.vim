@@ -7,6 +7,11 @@ let mapleader="§"
 " NERDTree
 map <leader>3 :NERDTreeToggle<CR>
 
+" Rails.vim Backbone shortcuts
+map <leader>jm :Rjmodel 
+map <leader>jv :Rjview 
+map <leader>jr :Rjrouter 
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
@@ -71,4 +76,3 @@ vnoremap . :norm.<CR>
 
 "Fixes end of line movement in visual mode
 vmap $ g_
-
