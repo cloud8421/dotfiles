@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
@@ -76,7 +76,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="alanpeabody"
+export ZSH_THEME="wedisagree"
 # export ZSH_THEME="nebirhos"
 # Node JS settings
 export NODE_PATH="/usr/local/lib/node"
@@ -94,3 +94,4 @@ unsetopt correct_all
  }
 
 source "`brew --prefix grc`/etc/grc.bashrc"
+
