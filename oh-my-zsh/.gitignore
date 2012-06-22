@@ -4,7 +4,6 @@ projects.zsh
 custom/*
 !custom/example
 !custom/example.zsh
-cache
 *.swp
-
-.DS_Store
+!custom/example.zshcache
+cache/

@@ -25,7 +25,7 @@ PROMPT='%{$fg[magenta]%}[%c] %{$reset_color%}'
 
 # The right-hand prompt
 
-RPROMPT='%{$fg[yellow]%}$(~/.rvm/bin/rvm-prompt v g)%{$reset_color%}%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}$(git_prompt_status)%{$reset_color%}'
+RPROMPT='%{$fg[yellow]%}$(~/.rvm/bin/rvm-prompt v g)%{$reset_color%} $(git_prompt_info)%{$reset_color%}$(git_prompt_status)%{$reset_color%}'
 
 # Add this at the start of RPROMPT to include rvm info showing ruby-version@gemset-name
 # %{$fg[yellow]%}$(~/.rvm/bin/rvm-prompt)%{$reset_color%}
