@@ -85,9 +85,6 @@
 [submodule "vim/bundle/vimux-ruby-test"]
 	path = vim/bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test
-[submodule "vim/bundle/vim-autocomplpop"]
-	path = vim/bundle/vim-autocomplpop
-	url = https://github.com/toupeira/vim-autocomplpop.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
@@ -130,3 +127,12 @@
 [submodule "vim/bundle/moria"]
 	path = vim/bundle/moria
 	url = https://github.com/vim-scripts/moria.git
+[submodule "vim/bundle/mustang.vim"]
+	path = vim/bundle/mustang.vim
+	url = https://github.com/croaker/mustang-vim.git
+[submodule "vim/bundle/vitality.vim"]
+	path = vim/bundle/vitality.vim
+	url = https://github.com/sjl/vitality.vim
+[submodule "vim/bundle/vim-puppet"]
+	path = vim/bundle/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
