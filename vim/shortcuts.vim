@@ -8,9 +8,9 @@ let mapleader="§"
 map <leader>3 :NERDTreeToggle<CR>
 
 " Rails.vim Backbone shortcuts
-map <leader>jm :Rjmodel 
-map <leader>jv :Rjview 
-map <leader>jr :Rjrouter 
+map <leader>jm :Rjmodel
+map <leader>jv :Rjview
+map <leader>jr :Rjrouter
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -76,3 +76,7 @@ vnoremap . :norm.<CR>
 
 "Fixes end of line movement in visual mode
 vmap $ g_
+
+"Underscores to camelcase and viceversa
+map <leader>k :s#_\(\l\)#\u\1#g<cr>
+map <leader>u :s#\(\<\u\l\+\|\l\+\)\(\u\)#\l\1_\l\2#g<cr>
