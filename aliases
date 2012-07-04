@@ -31,3 +31,7 @@ alias sp="mdfind -onlyin ./ -name"
 alias gcm="git commit -m"
 alias gcam="git commit -am"
 alias cleanlogs="find . -name '*.log*' | xargs rm"
+alias pcat=pygmentize
+function pless() {
+  pcat "$1" | less -R
+}
