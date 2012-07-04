@@ -124,9 +124,6 @@
 [submodule "vim/bundle/mustang.vim"]
 	path = vim/bundle/mustang.vim
 	url = https://github.com/croaker/mustang-vim.git
-[submodule "vim/bundle/vitality.vim"]
-	path = vim/bundle/vitality.vim
-	url = https://github.com/sjl/vitality.vim
 [submodule "vim/bundle/vim-puppet"]
 	path = vim/bundle/vim-puppet
 	url = git://github.com/rodjek/vim-puppet.git
@@ -136,3 +133,6 @@
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
+[submodule "tmux-powerline"]
+	path = tmux-powerline
+	url = git://github.com/erikw/tmux-powerline.git
