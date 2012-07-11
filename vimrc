@@ -43,7 +43,7 @@ set complete=.,w,b
 
 " Tags
 let Tlist_Ctags_Cmd = "/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude='*.js' -f ./.tags *"
-set tags+=./.tags
+set tags+=.tags
 
 source $HOME/.vim/autocommands.vim
 source $HOME/.vim/plugins.vim
