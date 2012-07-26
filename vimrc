@@ -34,7 +34,7 @@ set number
 set numberwidth=5
 
 "Folding
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevelstart=99
 
 " Autocompletion options

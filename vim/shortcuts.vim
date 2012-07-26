@@ -12,6 +12,11 @@ map <leader>jm :Rjmodel
 map <leader>jv :Rjview
 map <leader>jr :Rjrouter
 
+" GitGrep
+map <leader>g :GitGrep
+nnoremap <leader><Down> :cn<CR>
+nnoremap <leader><Up> :cp<CR>
+
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
