@@ -89,9 +89,5 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 . `brew --prefix`/etc/profile.d/z.sh
- function precmd () {
-   z --add "$(pwd -P)"
- }
 
 source "`brew --prefix grc`/etc/grc.bashrc"
-
