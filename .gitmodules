@@ -139,3 +139,12 @@
 [submodule "vim/bundle/git-grep-vim"]
 	path = vim/bundle/git-grep-vim
 	url = git://github.com/henrik/git-grep-vim.git
+[submodule "vim/bundle/vimroom"]
+	path = vim/bundle/vimroom
+	url = https://github.com/mikewest/vimroom
+[submodule "vim/bundle/vim-jade"]
+	path = vim/bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade
+[submodule "vim/bundle/dwm.vim"]
+	path = vim/bundle/dwm.vim
+	url = git://github.com/spolu/dwm.vim.git
