@@ -1,12 +1,7 @@
-alias migrate="rake db:migrate db:test:prepare"
-alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
-alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
+alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias g="git"
 alias s="bundle exec rspec"
 alias cuc="bundle exec cucumber"
-alias gi="gem install"
-alias giv="gem install -v"
-alias gci="git pull --rebase && rake && git push"
 alias tlf="tail -f"
 alias b="bundle"
 alias be="bundle exec"
@@ -17,21 +12,20 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
-alias staging='heroku run console --remote staging'
-alias production='heroku run console --remote production'
-
-alias -g G='| grep'
-alias -g M='| less'
-alias -g L='| wc -l'
-alias -g ONE="| awk '{ print \$1}'"
-
+alias c='pbcopy'
+alias p='pbpaste'
+alias pgrep='pgrep -fli'
+alias lock='/system/library/coreservices/menu\ extras/user.menu/contents/resources/cgsession -suspend'
+alias venv-init='virtualenv venv -p /usr/local/bin/python --no-site-packages'
+alias venv-activate='source venv/bin/activate'
+alias tower='gittower -s'
 alias tags="/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude='*.js' --exclude=public --exclude=tmp -f ./.tags *"
 alias sp="mdfind -onlyin ./ -name"
 
-alias gcm="git commit -m"
-alias gcam="git commit -am"
 alias cleanlogs="find . -name '*.log*' | xargs rm"
 alias pcat=pygmentize
 function pless() {
   pcat "$1" | less -R
 }
+
+alias flush='dscacheutil -flushcache'
