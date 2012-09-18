@@ -1,6 +1,3 @@
-" Enables mouse detection
-set mouse=a
-
 "Change leader key
 let mapleader="§"
 

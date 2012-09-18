@@ -17,6 +17,12 @@ set laststatus=2  " Always display the status line
 set t_Co=256
 syntax on
 
+" Send more characters for redraws
+set ttyfast
+" Enable mouse use in all modes
+set mouse=a
+set ttymouse=xterm2
+
 filetype plugin indent on
 
 " Softtabs, 2 spaces
