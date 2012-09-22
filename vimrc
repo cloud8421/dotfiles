@@ -37,7 +37,7 @@ set clipboard=unnamed
 
 " Numbers
 set number
-set numberwidth=5
+set numberwidth=2
 
 "Folding
 set foldmethod=indent
