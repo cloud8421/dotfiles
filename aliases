@@ -12,14 +12,13 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
-alias c='pbcopy'
-alias p='pbpaste'
 alias pgrep='pgrep -fli'
+alias c="pcat"
 alias lock='/system/library/coreservices/menu\ extras/user.menu/contents/resources/cgsession -suspend'
 alias venv-init='virtualenv venv -p /usr/local/bin/python --no-site-packages'
 alias venv-activate='source venv/bin/activate'
 alias tower='gittower -s'
-alias tags="/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude='*.js' --exclude=public --exclude=tmp -f ./.tags *"
+alias tags="/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude=public --exclude=tmp -f ./.tags *"
 alias sp="mdfind -onlyin ./ -name"
 
 alias cleanlogs="find . -name '*.log*' | xargs rm"
