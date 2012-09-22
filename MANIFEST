@@ -2,6 +2,7 @@ ackrc
 aliases
 bash_profile
 bashrc
+ctags
 gemrc
 git_template
 gitconfig
