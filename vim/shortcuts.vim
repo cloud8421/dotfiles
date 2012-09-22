@@ -1,6 +1,9 @@
 "Change leader key
 let mapleader="§"
 
+" Help for word under cursor
+:map <leader>h "zyw:exe "h ".@z.""<CR>
+
 " NERDTree
 map <leader>3 :NERDTreeToggle<CR>
 
