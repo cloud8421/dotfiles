@@ -2,7 +2,7 @@
 au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru,.caprc,.irbrc,irb_tempfile*} set ft=ruby
 
 " Treat <li> and <p> tags like the block tags they are
-let g:html_indent_tags = 'li\|p'
+let g:html_indent_tags = 'li\|p\|aside\|section\|head\|body\|div'
 
 " Fake '|' as text object
 nnoremap di\| T\|d,
