@@ -22,9 +22,6 @@
 [submodule "vim/bundle/vim-endwise"]
 	path = vim/bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
-[submodule "vim/bundle/greplace.vim"]
-	path = vim/bundle/greplace.vim
-	url = https://github.com/vim-scripts/greplace.vim.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -43,9 +40,6 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "vim/bundle/mango.vim"]
-	path = vim/bundle/mango.vim
-	url = https://github.com/goatslacker/mango.vim.git
 [submodule "vim/bundle/vim-jasmine"]
 	path = vim/bundle/vim-jasmine
 	url = https://github.com/thomd/vim-jasmine.git
@@ -55,9 +49,6 @@
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "vim/bundle/taglist"]
-	path = vim/bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "vim/bundle/zencoding-vim"]
 	path = vim/bundle/zencoding-vim
 	url = https://github.com/mattn/zencoding-vim.git
@@ -67,9 +58,6 @@
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/gitv"]
-	path = vim/bundle/gitv
-	url = https://github.com/gregsexton/gitv.git
 [submodule "vim/bundle/vimux"]
 	path = vim/bundle/vimux
 	url = https://github.com/benmills/vimux.git
@@ -79,9 +67,6 @@
 [submodule "vim/bundle/vimux-ruby-test"]
 	path = vim/bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test
-[submodule "vim/bundle/tagbar"]
-	path = vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/bundle/vim-turbux"]
 	path = vim/bundle/vim-turbux
 	url = git@github.com:cloud8421/vim-turbux.git
@@ -94,12 +79,6 @@
 [submodule "vim/bundle/autocorrect.vim"]
 	path = vim/bundle/autocorrect.vim
 	url = https://github.com/vim-scripts/autocorrect.vim
-[submodule "vim/bundle/vylight"]
-	path = vim/bundle/vylight
-	url = https://github.com/vim-scripts/vylight.git
-[submodule "vim/bundle/vydark"]
-	path = vim/bundle/vydark
-	url = https://github.com/vim-scripts/vydark.git
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
@@ -115,15 +94,6 @@
 [submodule "vim/bundle/mustache.vim"]
 	path = vim/bundle/mustache.vim
 	url = https://github.com/juvenn/mustache.vim
-[submodule "vim/bundle/autolink.vim"]
-	path = vim/bundle/autolink.vim
-	url = https://github.com/sampsyo/autolink.vim
-[submodule "vim/bundle/moria"]
-	path = vim/bundle/moria
-	url = https://github.com/vim-scripts/moria.git
-[submodule "vim/bundle/mustang.vim"]
-	path = vim/bundle/mustang.vim
-	url = https://github.com/croaker/mustang-vim.git
 [submodule "vim/bundle/vim-puppet"]
 	path = vim/bundle/vim-puppet
 	url = git://github.com/rodjek/vim-puppet.git
@@ -139,9 +109,6 @@
 [submodule "vim/bundle/git-grep-vim"]
 	path = vim/bundle/git-grep-vim
 	url = git://github.com/henrik/git-grep-vim.git
-[submodule "vim/bundle/vimroom"]
-	path = vim/bundle/vimroom
-	url = https://github.com/mikewest/vimroom
 [submodule "vim/bundle/vim-jade"]
 	path = vim/bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade
@@ -160,3 +127,6 @@
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
+[submodule "vim/bundle/fish.vim"]
+	path = vim/bundle/fish.vim
+	url = https://github.com/vim-scripts/fish.vim
