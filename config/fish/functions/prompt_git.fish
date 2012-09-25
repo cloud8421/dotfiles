@@ -17,9 +17,9 @@ end
 
 function __fish_git_current_branch
   __fish_git_current_head | sed -e "s#^refs/heads/##"
-end 
+end
 
-function prompt_git 
+function prompt_git
   if __fish_git_in_working_tree
     if __fish_git_dirty
       set_color red
@@ -28,4 +28,12 @@ function prompt_git
     end
     printf " %s%s" (__fish_git_current_branch) (set_color normal)
   end
+end
+
+function ggpull
+  git pull origin (__fish_git_current_branch)
+end
+
+function ggpush
+  git push origin (__fish_git_current_branch)
 end

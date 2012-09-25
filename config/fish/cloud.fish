@@ -3,6 +3,9 @@ set PATH /usr/local/bin $PATH
 set PATH /usr/local/sbin $PATH
 set NODE_PATH /usr/local/lib/node
 
+. functions/*.fish
+. functions/z.fish
+
 if status --is-login
   rvm > /dev/null
 end
@@ -25,4 +28,8 @@ end
 
 function flush
   dscacheutil -flushcache
+end
+
+function gst
+  git status
 end
