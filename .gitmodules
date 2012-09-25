@@ -103,9 +103,6 @@
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule "tmux-powerline"]
-	path = tmux-powerline
-	url = git://github.com/erikw/tmux-powerline.git
 [submodule "vim/bundle/git-grep-vim"]
 	path = vim/bundle/git-grep-vim
 	url = git://github.com/henrik/git-grep-vim.git
