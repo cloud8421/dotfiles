@@ -6,9 +6,7 @@ set NODE_PATH /usr/local/lib/node
 . functions/*.fish
 . functions/z.fish
 
-if status --is-login
-  rvm > /dev/null
-end
+rvm reload
 
 function migrate
   bundle exec rake db:migrate db:test:prepare
