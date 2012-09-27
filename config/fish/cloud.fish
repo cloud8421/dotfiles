@@ -1,6 +1,7 @@
 set -x EDITOR /usr/local/bin/vim
 set PATH /usr/local/bin $PATH
 set PATH /usr/local/sbin $PATH
+set PATH /usr/local/share/npm/bin $PATH
 set NODE_PATH /usr/local/lib/node
 
 . functions/*.fish
@@ -34,4 +35,12 @@ end
 
 function gc
   git commit
+end
+
+function cleanlogs
+  find . -name '*.log' | xargs rm
+end
+
+function tower
+  gittower -s
 end
