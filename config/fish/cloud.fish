@@ -5,7 +5,6 @@ set PATH /usr/local/share/npm/bin $PATH
 set NODE_PATH /usr/local/lib/node
 
 . functions/*.fish
-. functions/z.fish
 
 rvm reload > /dev/null
 
