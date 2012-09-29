@@ -7,6 +7,11 @@ set NODE_PATH /usr/local/lib/node
 . functions/*.fish
 
 rvm reload > /dev/null
+autojump   > /dev/null
+
+function rehash
+  . ~/.config/fish/config.fish
+end
 
 function migrate
   bundle exec rake db:migrate db:test:prepare
