@@ -75,6 +75,6 @@ function fish_prompt -d "Write out the prompt"
 		# printf ' %s%s/%s' (set_color normal) (set_color blue) (parse_git_branch)
 	end
 
-  printf ' %s%s%s ± ' (set_color blue) (rvm-prompt v) (set_color normal)
+  printf ' %s%s%s ± %s' (set_color blue) (rvm-prompt v) (set_color brown) (set_color normal)
 
 end
