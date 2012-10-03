@@ -54,7 +54,7 @@ function fish_prompt -d "Write out the prompt"
 
 	# Color writeable dirs green, read-only dirs red
 	if test -w "."
-		printf '%s%s' (set_color green) (prompt_pwd)
+		printf '%s%s' (set_color brown) (prompt_pwd)
 	else
 		printf '%s%s' (set_color red) (prompt_pwd)
 	end
@@ -75,6 +75,6 @@ function fish_prompt -d "Write out the prompt"
 		# printf ' %s%s/%s' (set_color normal) (set_color blue) (parse_git_branch)
 	end
 
-  printf ' %s%s%s ± %s' (set_color blue) (rvm-prompt v) (set_color brown) (set_color normal)
+  printf ' %s%s%s ± %s' (set_color green) (rvm-prompt v) (set_color brown) (set_color normal)
 
 end
