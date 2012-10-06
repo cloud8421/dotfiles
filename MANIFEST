@@ -3,6 +3,7 @@ aliases
 bash_profile
 bashrc
 ctags
+config
 gemrc
 git_template
 gitconfig
@@ -16,6 +17,7 @@ rvmrc
 tmux.conf
 vim
 vimrc
+wemux
 zlogin
 zsh
 zshrc
