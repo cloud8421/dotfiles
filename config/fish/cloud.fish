@@ -48,3 +48,7 @@ end
 function tower
   gittower -s
 end
+
+function v
+  set -lx $argv
+end
