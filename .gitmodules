@@ -73,9 +73,6 @@
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
 	url = https://github.com/bbommarito/vim-slim.git
-[submodule "vim/bundle/autocorrect.vim"]
-	path = vim/bundle/autocorrect.vim
-	url = https://github.com/vim-scripts/autocorrect.vim
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
