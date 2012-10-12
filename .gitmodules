@@ -100,3 +100,6 @@
 [submodule "vim/bundle/fish.vim"]
 	path = vim/bundle/fish.vim
 	url = https://github.com/vim-scripts/fish.vim
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
