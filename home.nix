@@ -84,6 +84,7 @@
       nvim-treesitter.withAllGrammars
       vim-fugitive
       vim-nix
+
       {
         plugin = lualine-nvim;
         type = "lua";
@@ -98,7 +99,34 @@
           }
         '';
       }
+
+      {
+        plugin = telescope-nvim;
+        type = "lua";
+        config = ''
+          require('telescope').setup {
+            defaults = {
+              mappings = {
+                i = {
+                  ['<C-u>'] = false,
+                  ['<C-d>'] = false,
+                },
+              },
+            },
+          }
+
+          vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[F]ind [F]iles' })
+          vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = '[F]ind by [G]rep' })
+          vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, { desc = '[F]ind [H]elp' })
+        '';
+      }
     ];
+
+    extraLuaConfig = ''
+      vim.g.mapleader = ' '
+      vim.g.maplocalleader = ' '
+    '';
+
   };
 
   programs.starship = {
