@@ -6,7 +6,7 @@
   fonts.fontconfig.enable = true;
 
   home.packages = [
-    pkgs.git
+    pkgs.heroku
     (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
 
