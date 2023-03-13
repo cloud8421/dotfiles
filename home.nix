@@ -11,10 +11,6 @@
     (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
 
-  programs.gpg = {
-    enable = true;
-  };
-
   programs.git = {
     enable = true;
     userName = "Claudio Ortolina";
