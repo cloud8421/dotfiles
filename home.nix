@@ -111,6 +111,13 @@
 
   programs.zsh = {
     enable = true;
+
+    shellAliases = {
+      s = "git status --short";
+      l = "git lg";
+      ll = "ls -ltr";
+      ".." = "cd ..";
+    };
   };
 
   programs.tmux = {
