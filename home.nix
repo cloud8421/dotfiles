@@ -11,10 +11,14 @@
     (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
 
+  programs.gpg = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     userName = "Claudio Ortolina";
-    userEmail = "cloud8421@gmail.com";
+    userEmail = "claudio@pspdfkit.com";
 
     aliases = {
       co = "checkout";
@@ -56,11 +60,21 @@
     ];
 
     extraConfig = {
+      core.sshCommand = "ssh";
+      commit.gpgsign = true;
+      gpg.format = "ssh";
+      user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBKfDkGJ+DUvKFUnZM+Snku6dTa61C0lVbchW82DjF3c";
+      gpg = {
+        "ssh" = {
+          program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+        };
+      };
+
       color.branch = "auto";
       color.diff = "auto";
       color.interactive = "auto";
       color.status = "auto";
-      commit.verbose = "true";
+      commit.verbose = true;
       core.editor = "nvim";
       format.pretty = "%Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s";
       pull.rebase = "false";
@@ -164,6 +178,11 @@
         user = "cloud";
       };
     };
+
+    extraConfig = ''
+      IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+      AddKeysToAgent yes
+    '';
   };
 
   programs.zsh = {

@@ -5,4 +5,4 @@
 - [x] Tmux
 - [ ] ASDF
 - [ ] Emacs
-- [ ] GPG and signed commits
+- [x] GPG and signed commits
