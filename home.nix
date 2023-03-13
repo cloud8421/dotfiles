@@ -3,9 +3,11 @@
   home.homeDirectory = "/Users/cloud";
   home.stateVersion = "22.11";
   programs.home-manager.enable = true;
-  
+  fonts.fontconfig.enable = true;
+
   home.packages = [
     pkgs.git
+    (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
 
   programs.neovim = {
