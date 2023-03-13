@@ -154,6 +154,17 @@
     };
   };
 
+  programs.ssh = {
+    enable = true;
+
+    matchBlocks = {
+      "mac-mini" = {
+        host = "mac-mini.local";
+        user = "cloud";
+      };
+    };
+  };
+
   programs.zsh = {
     enable = true;
 
