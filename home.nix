@@ -7,6 +7,7 @@
 
   home.packages = [
     pkgs.heroku
+    pkgs.postgresql
     (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
 
