@@ -98,6 +98,14 @@
       onedarkpro-nvim
 
       {
+        plugin = comment-nvim;
+        type = "lua";
+        config = ''
+          require('Comment').setup()
+        '';
+      }
+
+      {
         plugin = lualine-nvim;
         type = "lua";
         config = ''
