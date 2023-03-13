@@ -121,6 +121,20 @@
           vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags, { desc = '[F]ind [H]elp' })
         '';
       }
+
+
+      {
+        plugin = telescope-file-browser-nvim;
+        type = "lua";
+        config = ''
+          -- To get telescope-file-browser loaded and working with telescope,
+          -- you need to call load_extension, somewhere after setup function:
+          require("telescope").load_extension "file_browser"
+
+          vim.keymap.set('n', '<leader>fb', ":Telescope file_browser path=%:p:h<cr>")
+          vim.keymap.set('n', '<leader>fB', ":Telescope file_browser<cr>")
+        '';
+      }
     ];
 
     extraLuaConfig = ''
