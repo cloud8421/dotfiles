@@ -79,6 +79,26 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
+
+    plugins = with pkgs.vimPlugins; [
+      nvim-treesitter.withAllGrammars
+      vim-fugitive
+      vim-nix
+      {
+        plugin = lualine-nvim;
+        type = "lua";
+        config = ''
+          require('lualine').setup {
+            options = {
+              icons_enabled = false,
+              theme = 'onedark',
+              component_separators = '|',
+              section_separators = ' ',
+            }
+          }
+        '';
+      }
+    ];
   };
 
   programs.starship = {
