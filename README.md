@@ -11,7 +11,7 @@
 	- [ ] Format?
 	- [ ] File Tree
 	- [ ] EndWise
-	- [ ] Surround?
+	- [x] Surround
 	- [ ] Unimpaired?
 	- [ ] EnMasse?
 - [x] Git

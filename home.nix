@@ -96,6 +96,7 @@
       nvim-treesitter.withAllGrammars
       vim-fugitive
       vim-nix
+      vim-surround
       onedarkpro-nvim
       tabular
       vim-test
