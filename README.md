@@ -1,6 +1,19 @@
 # TODO
 
 - [ ] Neovim configuration
+	- [ ] Vimux
+	- [ ] Tabular
+	- [ ] Vim-Test
+	- [ ] Fzf?
+	- [ ] Startify
+	- [ ] Ack?
+	- [ ] Better Whitespace
+	- [ ] Format?
+	- [ ] File Tree
+	- [ ] EndWise
+	- [ ] Surround?
+	- [ ] Unimpaired?
+	- [ ] EnMasse?
 - [x] Git
 - [x] Tmux
 - [ ] ASDF
