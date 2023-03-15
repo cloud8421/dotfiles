@@ -2,7 +2,7 @@
 
 - [ ] Neovim configuration
 	- [ ] Vimux
-	- [ ] Tabular
+	- [x] Tabular
 	- [ ] Vim-Test
 	- [ ] Fzf?
 	- [ ] Startify

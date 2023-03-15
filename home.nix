@@ -96,6 +96,7 @@
       vim-fugitive
       vim-nix
       onedarkpro-nvim
+      tabular
 
       {
         plugin = comment-nvim;
