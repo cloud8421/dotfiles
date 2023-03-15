@@ -6,7 +6,7 @@
 	- [x] Vim-Test
 	- [x] Fzf?
 	- [x] Startify
-	- [ ] Ack?
+	- [x] Ack
 	- [x] Better Whitespace
 	- [ ] Format?
 	- [ ] File Tree

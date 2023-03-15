@@ -9,6 +9,7 @@
     pkgs.heroku
     pkgs.postgresql
     pkgs.fzf
+    pkgs.ripgrep
     (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
   ];
 
@@ -195,6 +196,20 @@
         type = "viml";
         config = ''
           set list listchars=tab:»·,trail:·
+        '';
+      }
+
+      {
+        plugin = ack-vim;
+        type = "viml";
+        config = ''
+        if executable('rg')
+          " Use Ack with rg
+          let g:ackprg = 'rg --vimgrep --ignore-case'
+
+          " Use rg over Grep
+          set grepprg=rg\ --vimgrep\ --ignore-case
+        endif
         '';
       }
     ];
