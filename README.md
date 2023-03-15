@@ -7,7 +7,7 @@
 	- [x] Fzf?
 	- [x] Startify
 	- [ ] Ack?
-	- [ ] Better Whitespace
+	- [x] Better Whitespace
 	- [ ] Format?
 	- [ ] File Tree
 	- [ ] EndWise

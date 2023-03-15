@@ -189,6 +189,14 @@
           let g:startify_list_order = ['dir', 'sessions']
         '';
       }
+
+      {
+        plugin = vim-better-whitespace;
+        type = "viml";
+        config = ''
+          set list listchars=tab:»·,trail:·
+        '';
+      }
     ];
 
     extraLuaConfig = ''
