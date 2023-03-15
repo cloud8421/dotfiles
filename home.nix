@@ -1,4 +1,18 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+
+let
+  en-masse = pkgs.vimUtils.buildVimPluginFrom2Nix {
+    name = "en-masse";
+    src = pkgs.fetchFromGitHub {
+      owner = "Olical";
+      repo = "vim-enmasse";
+      rev = "c2286f1d7bd735287a661cd223cd94e2a1f74deb";
+      hash = "sha256-eOMpCj4o9EK5mhbXEQ5Vz32/0UKbyRxNyDHhtP8QggE";
+    };
+  };
+in
+
+{
   home.username = "cloud";
   home.homeDirectory = "/Users/cloud";
   home.stateVersion = "22.11";
@@ -97,6 +111,7 @@
 
     plugins = with pkgs.vimPlugins; [
       cmp-nvim-lsp
+      en-masse
       luasnip
       mason-lspconfig-nvim
       mason-nvim
@@ -262,6 +277,9 @@
         if os.getenv("TMUX") then
           vim.g['test#strategy'] = "vimux"
         end
+
+        -- EnMasse
+        vim.keymap.set('n', '<leader>e', ":EnMasse<cr>")
 
         -- LSP settings.
         --  This function gets run when an LSP connects to a particular buffer.

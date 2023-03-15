@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Neovim configuration
+- [x] Neovim configuration
 	- [x] Vimux
 	- [x] Tabular
 	- [x] Vim-Test
@@ -13,7 +13,7 @@
 	- [x] EndWise
 	- [x] Surround
 	- [x] Unimpaired
-	- [ ] EnMasse?
+	- [x] EnMasse
 - [x] Git
 - [x] Tmux
 - [ ] ASDF
