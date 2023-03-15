@@ -98,6 +98,7 @@
       onedarkpro-nvim
       tabular
       telescope-fzf-native-nvim
+      vim-endwise
       vim-fugitive
       vim-nix
       vim-surround

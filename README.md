@@ -10,7 +10,7 @@
 	- [x] Better Whitespace
 	- [ ] Format?
 	- [x] File Tree
-	- [ ] EndWise
+	- [x] EndWise
 	- [x] Surround
 	- [ ] Unimpaired?
 	- [ ] EnMasse?
