@@ -9,7 +9,7 @@
 	- [x] Ack
 	- [x] Better Whitespace
 	- [ ] Format?
-	- [ ] File Tree
+	- [x] File Tree
 	- [ ] EndWise
 	- [x] Surround
 	- [ ] Unimpaired?
