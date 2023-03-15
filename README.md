@@ -12,7 +12,7 @@
 	- [x] File Tree
 	- [x] EndWise
 	- [x] Surround
-	- [ ] Unimpaired?
+	- [x] Unimpaired
 	- [ ] EnMasse?
 - [x] Git
 - [x] Tmux

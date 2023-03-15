@@ -103,6 +103,7 @@
       vim-nix
       vim-surround
       vim-test
+      vim-unimpaired
       vimux
 
       {
