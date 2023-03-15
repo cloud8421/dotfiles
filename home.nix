@@ -94,14 +94,14 @@
 
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
+      onedarkpro-nvim
+      tabular
+      telescope-fzf-native-nvim
       vim-fugitive
       vim-nix
       vim-surround
-      onedarkpro-nvim
-      tabular
       vim-test
       vimux
-      telescope-fzf-native-nvim
 
       {
         plugin = comment-nvim;
