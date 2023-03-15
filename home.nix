@@ -97,6 +97,8 @@
       vim-nix
       onedarkpro-nvim
       tabular
+      vim-test
+      vimux
 
       {
         plugin = comment-nvim;
@@ -160,8 +162,8 @@
           -- you need to call load_extension, somewhere after setup function:
           require("telescope").load_extension "file_browser"
 
-          vim.keymap.set('n', '<leader>fb', ":Telescope file_browser path=%:p:h<cr>")
-          vim.keymap.set('n', '<leader>fB', ":Telescope file_browser<cr>")
+          vim.keymap.set('n', '<leader>1', ":Telescope file_browser<cr>")
+          vim.keymap.set('n', '<leader>2', ":Telescope file_browser path=%:p:h<cr>")
         '';
       }
     ];
@@ -189,6 +191,20 @@
       vim.o.timeoutlen = 300
       -- Set completeopt to have a better completion experience
       vim.o.completeopt = 'menuone,noselect'
+
+      -- Testing
+      vim.g.VimuxOrientation = "v"
+      vim.g.VimuxHeight = "30"
+      vim.g.VimuxUseNearestPane = 1
+      vim.g['test#strategy'] = "neovim"
+
+      vim.keymap.set('n', '<leader>f', ":TestNearest<cr>")
+      vim.keymap.set('n', '<leader>t', ":TestFile<cr>")
+      vim.keymap.set('n', '<leader>l', ":TestLast<cr>")
+
+      if os.getenv("TMUX") then
+        vim.g['test#strategy'] = "vimux"
+      end
     '';
 
   };
