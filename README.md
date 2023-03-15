@@ -8,7 +8,7 @@
 	- [x] Startify
 	- [x] Ack
 	- [x] Better Whitespace
-	- [ ] Format?
+	- [x] Format
 	- [x] File Tree
 	- [x] EndWise
 	- [x] Surround
