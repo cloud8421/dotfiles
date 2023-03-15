@@ -1,10 +1,10 @@
 # TODO
 
 - [ ] Neovim configuration
-	- [ ] Vimux
+	- [x] Vimux
 	- [x] Tabular
-	- [ ] Vim-Test
-	- [ ] Fzf?
+	- [x] Vim-Test
+	- [x] Fzf?
 	- [ ] Startify
 	- [ ] Ack?
 	- [ ] Better Whitespace
