@@ -175,8 +175,8 @@
           -- you need to call load_extension, somewhere after setup function:
           require("telescope").load_extension "file_browser"
 
-          vim.keymap.set('n', '<leader>1', ":Telescope file_browser<cr>")
-          vim.keymap.set('n', '<leader>2', ":Telescope file_browser path=%:p:h<cr>")
+          vim.keymap.set('n', '<leader>fb', ":Telescope file_browser<cr>")
+          vim.keymap.set('n', '<leader>fB', ":Telescope file_browser path=%:p:h<cr>")
         '';
       }
     ];
@@ -211,9 +211,9 @@
       vim.g.VimuxUseNearestPane = 1
       vim.g['test#strategy'] = "neovim"
 
-      vim.keymap.set('n', '<leader>f', ":TestNearest<cr>")
-      vim.keymap.set('n', '<leader>t', ":TestFile<cr>")
-      vim.keymap.set('n', '<leader>l', ":TestLast<cr>")
+      vim.keymap.set('n', '<leader>tf', ":TestNearest<cr>")
+      vim.keymap.set('n', '<leader>tt', ":TestFile<cr>")
+      vim.keymap.set('n', '<leader>tl', ":TestLast<cr>")
 
       if os.getenv("TMUX") then
         vim.g['test#strategy'] = "vimux"
