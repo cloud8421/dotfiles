@@ -5,7 +5,7 @@
 	- [x] Tabular
 	- [x] Vim-Test
 	- [x] Fzf?
-	- [ ] Startify
+	- [x] Startify
 	- [ ] Ack?
 	- [ ] Better Whitespace
 	- [ ] Format?

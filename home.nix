@@ -179,6 +179,15 @@
           vim.keymap.set('n', '<leader>fB', ":Telescope file_browser path=%:p:h<cr>")
         '';
       }
+
+      {
+        plugin = vim-startify;
+        type = "viml";
+        config = ''
+          let g:startify_change_to_dir = 0
+          let g:startify_list_order = ['dir', 'sessions']
+        '';
+      }
     ];
 
     extraLuaConfig = ''
