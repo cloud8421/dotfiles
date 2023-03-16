@@ -1,4 +1,9 @@
-.PHONY: switch update
+.PHONY: install switch update
+
+install:
+	nix run . switch
+	home-manager switch
+	rustup default stable
 
 switch:
 	home-manager switch

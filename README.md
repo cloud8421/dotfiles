@@ -6,8 +6,17 @@ Managed via [Nix](https://nixos.org/explore.html) and [Home Manager](https://git
 
 - Install Nix via [The Determinate Nix Installer](https://zero-to-nix.com/concepts/nix-installer).
 - Clone this repo at `~/.config/nixpkgs`
-- Run `nix run . switch`
-- Run `home-manager switch`
+- Run `make install`
+
+## Changes
+
+- Make relevant changes
+- Run `make switch`
+
+## Updating packages
+
+- Run `make update`
+- Run `git commit --amend` to amend the newly generated commit
 
 ## Caveats
 
