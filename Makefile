@@ -9,4 +9,4 @@ switch:
 	home-manager switch
 
 update:
-	nix flake update --commit-lock-file
+	nix --option commit-lockfile-summary "[Nix] Update flake.lock" flake update --update-lock-file
