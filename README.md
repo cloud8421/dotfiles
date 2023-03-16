@@ -18,10 +18,6 @@ Managed via [Nix](https://nixos.org/explore.html) and [Home Manager](https://git
 - Run `make update`
 - Run `git commit --amend` to amend the newly generated commit
 
-## Caveats
-
-- While the configuration installs `rustup` to manage rust installations, I haven't looked into how enabling the default toolchain automatically. So after the first time you run `home-manager switch`, you should also run `rustup default stable`.
-
 ## Credits
 
 Thanks to Ju Liu for his straightforward guide at <https://juliu.is/tidying-your-home-with-nix/>.
