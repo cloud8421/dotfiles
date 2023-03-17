@@ -9,4 +9,4 @@ install:
 	rustup default stable
 
 update:
-	nix --option commit-lockfile-summary "[Nix] Update flake.lock" flake update --update-lock-file
+	nix --option commit-lockfile-summary "[Nix] Update flake.lock" flake update --commit-lock-file
