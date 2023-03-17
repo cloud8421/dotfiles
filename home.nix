@@ -115,6 +115,7 @@ in
       en-masse
       luasnip
       lsp-format-nvim
+      lsp_signature-nvim
       mason-lspconfig-nvim
       mason-nvim
       neodev-nvim
@@ -295,6 +296,14 @@ in
 
           -- Format on save
           require("lsp-format").on_attach(client)
+
+          -- Floating signatures
+          require "lsp_signature".on_attach({
+            bind = true, -- This is mandatory, otherwise border config won't get registered.
+            handler_opts = {
+              border = "rounded"
+            }
+          }, bufnr)
 
           -- In this case, we create a function that lets us more easily define mappings specific
           -- for LSP related items. It sets the mode, buffer and description for us each time.
