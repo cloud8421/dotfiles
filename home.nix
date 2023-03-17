@@ -83,6 +83,7 @@ in
           program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
         };
       };
+      init.defaultBranch = "main";
 
       color.branch = "auto";
       color.diff = "auto";
