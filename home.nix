@@ -126,6 +126,7 @@ in
       onedarkpro-nvim
       tabular
       telescope-fzf-native-nvim
+      vim-dispatch
       vim-endwise
       vim-fugitive
       vim-nix
