@@ -24,6 +24,7 @@ in
     pkgs.postgresql
     pkgs.fzf
     pkgs.ripgrep
+    pkgs.fd
     # TODO: Requires running 'rustup default stable' - try to incorporate in home.nix
     pkgs.rustup
     pkgs.deno
