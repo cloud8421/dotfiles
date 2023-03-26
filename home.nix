@@ -28,6 +28,7 @@ in
     # TODO: Requires running 'rustup default stable' - try to incorporate in home.nix
     pkgs.rustup
     pkgs.deno
+    pkgs.nodejs
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
@@ -114,6 +115,7 @@ in
 
     plugins = with pkgs.vimPlugins; [
       cmp-nvim-lsp
+      copilot-vim
       en-masse
       luasnip
       lsp-format-nvim
