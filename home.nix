@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 let
   en-masse = pkgs.vimUtils.buildVimPluginFrom2Nix {
@@ -448,6 +448,19 @@ in
 
     settings = {
       add_newline = false;
+      format = lib.concatStrings [
+        "$username"
+        "$hostname"
+        "$directory"
+        "$time"
+        "$cmd_duration"
+        "$git_branch"
+        "$git_commit"
+        "$git_state"
+        "$git_status"
+        "$line_break"
+        "$character"
+      ];
     };
   };
 
