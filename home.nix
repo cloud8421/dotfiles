@@ -106,6 +106,12 @@ in
     };
   };
 
+  programs.exa = {
+    enable = true;
+    enableAliases = true;
+    icons = true;
+  };
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -486,7 +492,6 @@ in
     shellAliases = {
       s = "git status --short";
       l = "git lg";
-      ll = "ls -ltr";
       ".." = "cd ..";
     };
   };
