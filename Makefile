@@ -10,3 +10,4 @@ install:
 
 update:
 	nix --option commit-lockfile-summary "[Nix] Update flake.lock" flake update --commit-lock-file
+	home-manager switch
