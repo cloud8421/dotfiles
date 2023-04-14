@@ -148,16 +148,7 @@ in
         plugin = comment-nvim;
         type = "lua";
         config = ''
-          require('Comment').setup({
-            toggler = {
-                line = '<leader>cc',
-                block = '<leader>bc',
-            },
-            opleader = {
-                line = '<leader>c',
-                block = '<leader>b',
-            },
-          })
+          require('Comment').setup()
         '';
       }
 
