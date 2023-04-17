@@ -11,3 +11,7 @@ install:
 update:
 	nix --option commit-lockfile-summary "[Nix] Update flake.lock" flake update --commit-lock-file
 	home-manager switch
+
+gc:
+	home-manager expire-generations "-30 days"
+	nix-collect-garbage
