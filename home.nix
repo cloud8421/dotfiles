@@ -25,13 +25,16 @@ in
     pkgs.fzf
     pkgs.ripgrep
     pkgs.fd
-    pkgs.direnv
     # TODO: Requires running 'rustup default stable' - try to incorporate in home.nix
     pkgs.rustup
     pkgs.deno
     pkgs.nodejs
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
+
+  programs.direnv = {
+    enable = true;
+  };
 
   programs.git = {
     enable = true;
