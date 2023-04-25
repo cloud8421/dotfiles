@@ -287,6 +287,14 @@ in
           vim.g['test#strategy'] = "vimux"
         end
 
+        -- Treesitter
+        require'nvim-treesitter.configs'.setup {
+          highlight = {
+            enable = true,
+            disable = { },
+          },
+        }
+
         -- EnMasse
         vim.keymap.set('n', '<leader>e', ":EnMasse<cr>")
 
