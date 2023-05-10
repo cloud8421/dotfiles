@@ -269,7 +269,8 @@ in
         -- Decrease update time
         vim.o.updatetime = 250
         vim.o.timeout = true
-        vim.o.timeoutlen = 300
+        vim.o.timeoutlen = 500
+        vim.o.ttimeoutlen = 500
         -- Set completeopt to have a better completion experience
         vim.o.completeopt = 'menuone,noselect'
 
