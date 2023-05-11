@@ -505,9 +505,10 @@ in
     clock24 = true;
     shortcut = "a";
     baseIndex = 1;
+    mouse = true;
+    sensibleOnTop = true;
 
     plugins = with pkgs.tmuxPlugins; [
-      sensible
       pain-control
       copycat
       yank
@@ -517,11 +518,9 @@ in
       {
         plugin = dracula;
         extraConfig = ''
-                    set -g @dracula-show-fahrenheit false
-                    set -g @dracula-show-battery false
-                    set -g @dracula-show-network false
-                    set -g @dracula-show-weather false
-          	'';
+          set -g @dracula-show-fahrenheit false
+          set -g @dracula-plugins "battery weather"
+        '';
       }
     ];
 
@@ -537,9 +536,6 @@ in
 
       # Renumber windows when adding a new one
       set -g renumber-windows on
-
-      # Mouse support
-      set -g mouse on
     '';
   };
 
