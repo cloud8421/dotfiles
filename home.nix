@@ -158,6 +158,14 @@ in
       }
 
       {
+        plugin = which-key-nvim;
+        type = "lua";
+        config = ''
+          require('which-key').setup()
+        '';
+      }
+
+      {
         plugin = lualine-nvim;
         type = "lua";
         config = ''
@@ -213,8 +221,7 @@ in
           -- you need to call load_extension, somewhere after setup function:
           require("telescope").load_extension "file_browser"
 
-          vim.keymap.set('n', '<leader>fb', ":Telescope file_browser<cr>")
-          vim.keymap.set('n', '<leader>fB', ":Telescope file_browser path=%:p:h<cr>")
+          vim.keymap.set('n', '<leader>fb', ":Telescope file_browser<cr>", { desc = '[F]ile [B]rowser' })
         '';
       }
 
@@ -281,9 +288,9 @@ in
         vim.g.VimuxUseNearestPane = 1
         vim.g['test#strategy'] = "neovim"
 
-        vim.keymap.set('n', '<leader>tf', ":TestNearest<cr>")
-        vim.keymap.set('n', '<leader>tt', ":TestFile<cr>")
-        vim.keymap.set('n', '<leader>tl', ":TestLast<cr>")
+        vim.keymap.set('n', '<leader>tf', ":TestNearest<cr>", { desc = '[T]est [F]ocused' })
+        vim.keymap.set('n', '<leader>tt', ":TestFile<cr>", { desc = '[T]est from the [T]op' })
+        vim.keymap.set('n', '<leader>tl', ":TestLast<cr>", { desc = '[T]est [L]ast' })
 
         if os.getenv("TMUX") then
           vim.g['test#strategy'] = "vimux"
@@ -298,7 +305,7 @@ in
         }
 
         -- EnMasse
-        vim.keymap.set('n', '<leader>e', ":EnMasse<cr>")
+        vim.keymap.set('n', '<leader>e', ":EnMasse<cr>", { desc = 'R[E]place' })
 
         -- LSP Format on save
         require("lsp-format").setup {}
