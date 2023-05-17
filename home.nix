@@ -251,8 +251,8 @@ in
     ];
 
     extraLuaConfig = ''
-        vim.g.mapleader = ','
-        vim.g.maplocalleader = ','
+        vim.g.mapleader = ' '
+        vim.g.maplocalleader = ' '
         -- Show proper colors in terminal
         vim.o.termguicolors = true
         vim.cmd.colorscheme 'onedark'
