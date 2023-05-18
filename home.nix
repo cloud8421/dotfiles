@@ -238,6 +238,7 @@ in
         plugin = vim-better-whitespace;
         type = "viml";
         config = ''
+          let g:better_whitespace_operator = ""
           set list listchars=tab:»·,trail:·
         '';
       }
