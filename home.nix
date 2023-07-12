@@ -29,6 +29,7 @@ in
     pkgs.rustup
     pkgs.deno
     pkgs.nodejs
+    pkgs.parallel
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
