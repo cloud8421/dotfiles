@@ -30,6 +30,7 @@ in
     pkgs.deno
     pkgs.nodejs
     pkgs.parallel
+    pkgs.jq
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
