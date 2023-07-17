@@ -31,6 +31,7 @@ in
     pkgs.nodejs
     pkgs.parallel
     pkgs.jq
+    pkgs.youtube-dl
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
