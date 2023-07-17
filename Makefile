@@ -1,4 +1,4 @@
-.PHONY: install switch update
+.PHONY: install switch update gc diff
 
 switch:
 	home-manager switch
@@ -15,3 +15,6 @@ update:
 gc:
 	home-manager expire-generations "-30 days"
 	nix-collect-garbage
+
+diff:
+	nix profile diff-closures --profile /nix/var/nix/profiles/per-user/cloud/home-manager
