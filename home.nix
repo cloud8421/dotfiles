@@ -33,6 +33,7 @@ in
     pkgs.jq
     pkgs.youtube-dl
     pkgs.ledger
+    pkgs.ffmpeg
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
