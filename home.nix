@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 
 let
-  en-masse = pkgs.vimUtils.buildVimPluginFrom2Nix {
+  en-masse = pkgs.vimUtils.buildVimPlugin {
     name = "en-masse";
     src = pkgs.fetchFromGitHub {
       owner = "Olical";
