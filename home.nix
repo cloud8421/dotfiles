@@ -506,6 +506,8 @@ in
 
   programs.zsh = {
     enable = true;
+    enableAutosuggestions = true;
+    enableCompletion = true;
 
     shellAliases = {
       s = "git status --short";
