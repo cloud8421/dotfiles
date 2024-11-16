@@ -1,1 +1,1 @@
-stow -t ~ -v 1 alacritty git
+stow -t ~ -v 1 alacritty git starship
