@@ -1,1 +1,1 @@
-stow -t ~ -v 1 alacritty
+stow -t ~ -v 1 alacritty git

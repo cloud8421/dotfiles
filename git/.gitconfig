@@ -1,0 +1,58 @@
+[push]
+	default = current
+[format]
+	pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[user]
+	name = Claudio Ortolina
+	email = cloud8421@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID1AV3nUsfskvUMhJ23YKSs1i1r3R/8GKMmSZQ205xR+
+[mergetool]
+	keepBackup = true
+  prompt = true
+[commit]
+	verbose = true
+	gpgsign = true
+[color]
+	branch = auto
+	interactive = auto
+	diff = auto
+	status = auto
+[core]
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
+[alias]
+	co = checkout
+	pick = cherry-pick
+	s = status --short
+	pr = pull --rebase
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	churn = "!f() { git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | sort -g; }; f"
+	update = pull --rebase -s recursive -X
+	stat = diff --stat
+	d = diff --color-words
+[merge]
+	tool = nvimdiff
+[mergetool "nvimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[diff]
+	tool = nvimdiff
+[difftool]
+	prompt = false
+[status]
+	short = 1
+	branch = 1
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[difftool]
+  prompt = false
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
