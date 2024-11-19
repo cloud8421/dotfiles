@@ -21,6 +21,8 @@ brew "ripgrep"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Command-line Kanban board/task manager with support for Trello
+brew "taskell"
 # Terminal multiplexer
 brew "tmux"
 # Additional completion definitions for zsh
