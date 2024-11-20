@@ -1,0 +1,5 @@
+return {
+  {
+    "Olical/vim-enmasse",
+  },
+}
