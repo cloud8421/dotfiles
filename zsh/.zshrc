@@ -8,7 +8,7 @@ bindkey "^X^E" edit-command-line
 
 [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 [ -f ~/.ghcup/env ] && source ~/.ghcup/env
 
