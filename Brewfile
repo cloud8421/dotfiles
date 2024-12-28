@@ -11,6 +11,8 @@ brew "flyctl"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
