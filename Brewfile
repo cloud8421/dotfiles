@@ -38,3 +38,5 @@ cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# ZSA keyboard firmware flasher
+cask "keymapp"
