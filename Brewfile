@@ -40,3 +40,5 @@ cask "ghostty"
 cask "iterm2"
 # ZSA keyboard firmware flasher
 cask "keymapp"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
