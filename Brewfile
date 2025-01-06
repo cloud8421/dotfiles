@@ -36,8 +36,6 @@ cask "alfred"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # ZSA keyboard firmware flasher
 cask "keymapp"
 # Move and resize windows using keyboard shortcuts or snap areas
