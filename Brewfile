@@ -37,9 +37,13 @@ brew "zsh-completions"
 cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
+# Virtual Audio Driver
+cask "blackhole-2ch"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Open-source video transcoder
+cask "handbrake"
 # ZSA keyboard firmware flasher
 cask "keymapp"
 # Move and resize windows using keyboard shortcuts or snap areas
