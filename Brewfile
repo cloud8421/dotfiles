@@ -11,6 +11,8 @@ brew "flyctl"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Git extension for versioning large files
+brew "git-lfs"
 # Run and Test HTTP Requests with plain text and curl
 brew "hurl"
 # Simple terminal UI for git commands
