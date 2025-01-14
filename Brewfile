@@ -39,6 +39,8 @@ cask "alacritty"
 cask "alfred"
 # Virtual Audio Driver
 cask "blackhole-2ch"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
