@@ -15,8 +15,6 @@ brew "gh"
 brew "git-lfs"
 # Run and Test HTTP Requests with plain text and curl
 brew "hurl"
-# Modern load testing tool, using Go and JavaScript
-brew "k6"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
