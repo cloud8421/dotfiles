@@ -15,6 +15,8 @@ brew "gh"
 brew "git-lfs"
 # Run and Test HTTP Requests with plain text and curl
 brew "hurl"
+# Handy way to save and run project-specific commands
+brew "just"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
