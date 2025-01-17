@@ -33,8 +33,6 @@ brew "taskell"
 brew "tmux"
 # Additional completion definitions for zsh
 brew "zsh-completions"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
 # Virtual Audio Driver
