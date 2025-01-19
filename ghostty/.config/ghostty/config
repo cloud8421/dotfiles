@@ -1,1 +1,5 @@
 theme = tokyonight
+macos-titlebar-style = native
+confirm-close-surface = false
+
+keybind = global:ctrl+opt+cmd+.=toggle_quick_terminal
