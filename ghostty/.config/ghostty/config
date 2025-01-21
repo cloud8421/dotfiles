@@ -2,4 +2,7 @@ theme = GruvboxDarkHard
 macos-titlebar-style = native
 confirm-close-surface = false
 
+quick-terminal-position = left
+quick-terminal-animation-duration = 0.1
+
 keybind = global:ctrl+opt+cmd+.=toggle_quick_terminal
