@@ -1,4 +1,4 @@
-theme = tokyonight
+theme = GruvboxDarkHard
 macos-titlebar-style = native
 confirm-close-surface = false
 
