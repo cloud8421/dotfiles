@@ -5,10 +5,4 @@ return {
       contrast = "dark",
     },
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
 }
