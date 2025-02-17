@@ -6,9 +6,10 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
-[ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
-
 source <(fzf --zsh)
+
+export ASDF_DATA_DIR=/Users/cloud/.asdf
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 [ -f ~/.ghcup/env ] && source ~/.ghcup/env
 
