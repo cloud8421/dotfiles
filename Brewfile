@@ -35,8 +35,6 @@ brew "tmux"
 brew "zsh-completions"
 # Application launcher and productivity software
 cask "alfred"
-# Virtual Audio Driver
-cask "blackhole-2ch"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 cask "font-jetbrains-mono-nerd-font"
