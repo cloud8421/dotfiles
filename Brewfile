@@ -36,6 +36,8 @@ brew "taskell"
 brew "tmux"
 # Additional completion definitions for zsh
 brew "zsh-completions"
+# Command-line interface for 1Password
+cask "1password-cli"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service
