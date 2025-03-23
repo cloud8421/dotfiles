@@ -8,8 +8,7 @@ bindkey "^X^E" edit-command-line
 
 source <(fzf --zsh)
 
-export ASDF_DATA_DIR=/Users/cloud/.asdf
-export PATH="$ASDF_DATA_DIR/shims:$PATH"
+eval "$(mise activate zsh)"
 
 [ -f ~/.ghcup/env ] && source ~/.ghcup/env
 
@@ -26,6 +25,8 @@ alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale'
 alias lS='eza -1'
 alias lt='eza --tree --level=2'
 alias l.="eza -a | grep -E '^\.'"
+
+alias mr='mise run'
 
 export EDITOR=nvim
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
