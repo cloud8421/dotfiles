@@ -49,5 +49,7 @@ cask "handbrake"
 cask "keymapp"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
