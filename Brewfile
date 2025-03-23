@@ -1,4 +1,7 @@
 tap "homebrew/bundle"
+tap "homebrew/services"
+# Cross-platform make
+brew "cmake"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Modern, maintained replacement for ls
