@@ -43,6 +43,6 @@ then
   compinit
 fi
 
-eval "$(direnv hook zsh)"
-
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+
+eval "$(direnv hook zsh)"
