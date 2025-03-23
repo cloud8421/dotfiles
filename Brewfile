@@ -22,6 +22,8 @@ brew "lazygit"
 brew "mise"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Object-relational database system
+brew "postgresql@14", restart_service: :changed
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Cross-shell prompt for astronauts
@@ -45,5 +47,7 @@ cask "ghostty"
 cask "handbrake"
 # ZSA keyboard firmware flasher
 cask "keymapp"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
