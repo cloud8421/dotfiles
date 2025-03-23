@@ -8,12 +8,8 @@ brew "direnv"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Command-line tools for fly.io services
-brew "flyctl"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GitHub command-line tool
-brew "gh"
 # Git extension for versioning large files
 brew "git-lfs"
 # Run and Test HTTP Requests with plain text and curl
