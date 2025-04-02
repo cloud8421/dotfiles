@@ -6,8 +6,6 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
-source <(fzf --zsh)
-
 eval "$(mise activate zsh)"
 
 [ -f ~/.ghcup/env ] && source ~/.ghcup/env
@@ -46,3 +44,6 @@ fi
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 eval "$(direnv hook zsh)"
+eval "$(atuin init zsh)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
