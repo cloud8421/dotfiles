@@ -12,6 +12,7 @@ eval "$(mise activate zsh)"
 
 alias s='git status --short'
 alias l='git lg'
+alias gco='git branch | grep -v "^\*" | fzf --height=20% --reverse --info=inline | xargs git checkout'
 
 alias ls='eza'
 alias ll='eza -lbGF --git'
