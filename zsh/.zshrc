@@ -48,3 +48,5 @@ eval "$(direnv hook zsh)"
 eval "$(atuin init zsh)"
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+ulimit -n 20480
