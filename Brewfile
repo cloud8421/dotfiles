@@ -1,5 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin", restart_service: :changed
 # Cross-platform make
 brew "cmake"
 # Load/unload environment variables based on $PWD
@@ -34,6 +36,10 @@ brew "stow"
 brew "taskell"
 # Terminal multiplexer
 brew "tmux"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
 # Additional completion definitions for zsh
 brew "zsh-completions"
 # Command-line interface for 1Password
