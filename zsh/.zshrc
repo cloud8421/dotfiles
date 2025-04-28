@@ -6,6 +6,9 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
+# Can append comments to interactive commands
+setopt interactivecomments
+
 eval "$(mise activate zsh)"
 
 [ -f ~/.ghcup/env ] && source ~/.ghcup/env
