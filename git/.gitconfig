@@ -20,6 +20,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
+  pager = delta
 [alias]
 	co = checkout
 	pick = cherry-pick
@@ -32,12 +33,18 @@
 	d = diff --color-words
 [merge]
 	tool = nvimdiff
+  conflictstyle = zdiff3
 [mergetool "nvimdiff"]
 	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [diff]
 	tool = nvimdiff
 [difftool]
 	prompt = false
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  dark = true      # or light = true, or omit for auto-detection
 [status]
 	short = 1
 	branch = 1

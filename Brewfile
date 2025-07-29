@@ -12,6 +12,8 @@ brew "eza"
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Git extension for versioning large files
 brew "git-lfs"
 # Run and Test HTTP Requests with plain text and curl
