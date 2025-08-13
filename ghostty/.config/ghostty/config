@@ -1,11 +1,26 @@
 theme = tokyonight
 macos-titlebar-style = native
 confirm-close-surface = false
-
 font-size = 13
 window-inherit-font-size = false
-
 quick-terminal-position = left
 quick-terminal-animation-duration = 0.1
+unfocused-split-opacity = 0.9
+split-divider-color = #33467c
+mouse-hide-while-typing = true
+scrollback-limit = 1000000
+
 
 keybind = global:ctrl+opt+cmd+.=toggle_quick_terminal
+keybind = ctrl+n=new_window
+keybind = ctrl+a>ctrl+a=goto_split:next
+keybind = ctrl+a>h=new_split:left
+keybind = ctrl+a>-=new_split:down
+keybind = ctrl+a>k=new_split:up
+keybind = ctrl+a>\=new_split:right
+keybind = ctrl+a>z=toggle_split_zoom
+keybind = ctrl+a>n=next_tab
+keybind = ctrl+a>p=previous_tab
+keybind = super+r=reload_config
+window-save-state = always
+keybind = shift+enter=text:\n
