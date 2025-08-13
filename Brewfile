@@ -57,6 +57,8 @@ cask "ghostty"
 cask "handbrake"
 # ZSA keyboard firmware flasher
 cask "keymapp"
+# VPN client
+cask "mullvad-vpn"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Knowledge base that works on top of a local folder of plain text Markdown files
