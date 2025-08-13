@@ -27,7 +27,7 @@ brew "mise"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Object-relational database system
-brew "postgresql@14", restart_service: :changed
+brew "postgresql@17", restart_service: :changed
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Cross-shell prompt for astronauts
