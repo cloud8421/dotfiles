@@ -1,18 +1,29 @@
-theme = tokyonight
-macos-titlebar-style = native
-confirm-close-surface = false
-font-size = 13
-window-inherit-font-size = false
-quick-terminal-position = left
-quick-terminal-animation-duration = 0.1
-unfocused-split-opacity = 0.9
-split-divider-color = #33467c
-mouse-hide-while-typing = true
-scrollback-limit = 1000000
+# === Visuals ===
 
+font-size = 13
+macos-titlebar-style = native
+split-divider-color = #33467c
+theme = tokyonight
+unfocused-split-opacity = 0.9
+window-inherit-font-size = false
+
+# === Session-ish management ===
+
+confirm-close-surface = false
+window-save-state = always
+# 100MB - doesn't support unlimited scrollback
+scrollback-limit = 1000000000
+
+# === Quick Terminal ===
+
+mouse-hide-while-typing = true
+quick-terminal-animation-duration = 0.1
+quick-terminal-position = left
 
 keybind = global:ctrl+opt+cmd+.=toggle_quick_terminal
-keybind = ctrl+n=new_window
+
+# === TMUX-like keybindings ===
+
 keybind = ctrl+a>ctrl+a=goto_split:next
 keybind = ctrl+a>h=new_split:left
 keybind = ctrl+a>-=new_split:down
@@ -21,6 +32,11 @@ keybind = ctrl+a>\=new_split:right
 keybind = ctrl+a>z=toggle_split_zoom
 keybind = ctrl+a>n=next_tab
 keybind = ctrl+a>p=previous_tab
-keybind = super+r=reload_config
-window-save-state = always
+keybind = ctrl+a>right=resize_split:right,80
+keybind = ctrl+a>up=resize_split:up,80
+keybind = ctrl+a>left=resize_split:left,80
+keybind = ctrl+a>down=resize_split:down,80
+
+# === Claude Code - write multiline prompts ===
+
 keybind = shift+enter=text:\n
