@@ -47,6 +47,7 @@ then
 fi
 
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+export PATH="$HOME/tools:$PATH"
 
 eval "$(direnv hook zsh)"
 eval "$(atuin init zsh)"
