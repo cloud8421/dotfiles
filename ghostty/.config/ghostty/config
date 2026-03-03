@@ -20,7 +20,7 @@ scrollback-limit = 1000000000
 mouse-hide-while-typing = true
 quick-terminal-animation-duration = 0.1
 quick-terminal-position = bottom
-quick-terminal-size = 25%,75%
+quick-terminal-size = 45%,75%
 
 keybind = global:ctrl+opt+cmd+.=toggle_quick_terminal
 
