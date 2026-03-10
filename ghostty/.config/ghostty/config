@@ -12,6 +12,9 @@ window-inherit-font-size = false
 
 confirm-close-surface = false
 window-save-state = always
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = true
 # 100MB - doesn't support unlimited scrollback
 scrollback-limit = 1000000000
 
