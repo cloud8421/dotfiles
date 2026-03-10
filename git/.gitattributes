@@ -25,3 +25,4 @@
 *.clj   diff=lisp
 *.cljs  diff=lisp
 *.cljc  diff=lisp
+* merge=mergiraf

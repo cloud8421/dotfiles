@@ -31,6 +31,10 @@
 	update = pull --rebase -s recursive -X
 	stat = diff --stat
 	d = diff --color-words
+  # Difftastic aliases, so `git dlog` is `git log` with difftastic and so on.
+  dlog = -c diff.external=difft log --ext-diff
+  dshow = -c diff.external=difft show --ext-diff
+  ddiff = -c diff.external=difft diff
 [merge]
 	tool = nvimdiff
   conflictstyle = zdiff3
@@ -63,3 +67,6 @@
 	format = ssh
 [gpg "ssh"]
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[merge "mergiraf"]
+	name = mergiraf
+	driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L

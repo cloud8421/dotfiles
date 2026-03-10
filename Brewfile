@@ -4,6 +4,8 @@ tap "homebrew/services"
 brew "atuin", restart_service: :changed
 # Cross-platform make
 brew "cmake"
+# Diff that understands syntax
+brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Modern, maintained replacement for ls
@@ -22,6 +24,8 @@ brew "hurl"
 brew "just"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Syntax-aware git merge driver
+brew "mergiraf"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
 # Ambitious Vim-fork focused on extensibility and agility
