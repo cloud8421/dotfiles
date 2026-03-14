@@ -31,6 +31,9 @@ alias l.="eza -a | grep -E '^\.'"
 
 alias mr='mise run'
 
+alias clin='clockify-cli in'
+alias clout='clockify-cli out'
+
 export EDITOR=nvim
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export KERL_BUILD_DOCS=yes
