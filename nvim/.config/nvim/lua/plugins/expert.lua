@@ -8,7 +8,6 @@ return {
           enabled = false,
         },
         expert = {
-          mason = true,
           enabled = true,
         },
       },
