@@ -44,4 +44,4 @@ keybind = global:ctrl+opt+cmd+.=toggle_quick_terminal
 
 # === Claude Code - write multiline prompts ===
 
-keybind = shift+enter=text:\n
+# keybind = shift+enter=text:\n
