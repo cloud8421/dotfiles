@@ -9,8 +9,6 @@ bindkey "^X^E" edit-command-line
 # Can append comments to interactive commands
 setopt interactivecomments
 
-eval "$(mise activate zsh)"
-
 [ -f ~/.ghcup/env ] && source ~/.ghcup/env
 
 alias s='git status --short'
@@ -51,7 +49,9 @@ fi
 
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 export PATH="$HOME/tools:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
+eval "$(mise activate zsh)"
 eval "$(direnv hook zsh)"
 eval "$(atuin init zsh)"
 
