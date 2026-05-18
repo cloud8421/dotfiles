@@ -1,7 +1,5 @@
 # === Visuals ===
 
-font-size = 13
-font-family = JetBrainsMonoNL NFM Medium
 macos-titlebar-style = native
 split-divider-color = #33467c
 theme = tokyonight
