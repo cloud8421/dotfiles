@@ -4,4 +4,5 @@ stow -t ~ -v 1 \
   starship \
   tmux \
   zsh \
-  nvim
+  nvim \
+  pi
