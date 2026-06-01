@@ -1,72 +1,79 @@
 [push]
-	default = current
+  default = simple
+  autoSetupRemote = true
 [format]
-	pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [user]
-	name = Claudio Ortolina
-	email = cloud8421@gmail.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID1AV3nUsfskvUMhJ23YKSs1i1r3R/8GKMmSZQ205xR+
+  name = Claudio Ortolina
+  email = cloud8421@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID1AV3nUsfskvUMhJ23YKSs1i1r3R/8GKMmSZQ205xR+
 [mergetool]
-	keepBackup = true
+  keepBackup = true
   prompt = true
 [commit]
-	verbose = true
-	gpgsign = true
+  verbose = true
+  gpgsign = true
 [color]
-	branch = auto
-	interactive = auto
-	diff = auto
-	status = auto
+  branch = auto
+  interactive = auto
+  diff = auto
+  status = auto
 [core]
-	excludesfile = ~/.gitignore_global
-	attributesfile = ~/.gitattributes
+  excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes
   pager = delta
 [alias]
-	co = checkout
-	pick = cherry-pick
-	s = status --short
-	pr = pull --rebase
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	churn = "!f() { git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | sort -g; }; f"
-	update = pull --rebase -s recursive -X
-	stat = diff --stat
-	d = diff --color-words
+  co = checkout
+  pick = cherry-pick
+  s = status --short
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  churn = "!f() { git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | sort -g; }; f"
+  update = pull --rebase -s recursive -X
+  stat = diff --stat
+  d = diff --color-words
   # Difftastic aliases, so `git dlog` is `git log` with difftastic and so on.
   dlog = -c diff.external=difft log --ext-diff
   dshow = -c diff.external=difft show --ext-diff
   ddiff = -c diff.external=difft diff
 [merge]
-	tool = nvimdiff
+  tool = nvimdiff
   conflictstyle = zdiff3
+  autoStash = true
 [mergetool "nvimdiff"]
-	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [diff]
-	tool = nvimdiff
+  tool = nvimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [interactive]
   diffFilter = delta --color-only
 [delta]
   navigate = true  # use n and N to move between diff sections
   dark = true      # or light = true, or omit for auto-detection
 [status]
-	short = 1
-	branch = 1
+  short = 1
+  branch = 1
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
 [pull]
-	rebase = false
+  rebase = true
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [difftool]
   prompt = false
 [gpg]
-	format = ssh
+  format = ssh
 [gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [merge "mergiraf"]
-	name = mergiraf
-	driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+  name = mergiraf
+  driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+[rerere]
+  enabled = true
+  autoUpdate = true
+[rebase]
+  autoSquash = true
+  autoStash = true
