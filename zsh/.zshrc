@@ -49,7 +49,6 @@ export PATH="$HOME/tools:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(mise activate zsh)"
-eval "$(direnv hook zsh)"
 eval "$(atuin init zsh)"
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
