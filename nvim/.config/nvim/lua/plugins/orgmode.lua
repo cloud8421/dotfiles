@@ -5,6 +5,7 @@ return {
     require("orgmode").setup({
       org_agenda_files = "~/Dropbox/org/**/*",
       org_default_notes_file = "~/Dropbox/org/refile.org",
+      org_todo_keywords = { "TODO(t)", "|", "CANCELED(c)", "DONE(d)" },
     })
     -- Experimental LSP support
     vim.lsp.enable("org")
