@@ -9,6 +9,10 @@ return {
         },
         expert = {
           mason = false,
+          enabled = false,
+        },
+        dexter = {
+          mason = true,
           enabled = true,
         },
       },
