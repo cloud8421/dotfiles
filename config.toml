@@ -1,0 +1,32 @@
+[bootstrap.packages]
+
+"brew-cask:alfred" = "latest"
+"brew-cask:claude" = "latest"
+"brew-cask:claude-code" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:linear" = "latest"
+"brew-cask:notion" = "latest"
+"brew:difftastic" = "latest"
+"brew:eza" = "latest"
+"brew:fd" = "latest"
+"brew:fzf" = "latest"
+"brew:gdal" = "latest"
+"brew:gh" = "latest"
+"brew:git-delta" = "latest"
+"brew:lazygit" = "latest"
+"brew:neovim" = "latest"
+"brew:ripgrep" = "latest"
+"brew:starship" = "latest"
+"brew:tmux" = "latest"
+
+[settings]
+dotfiles.root = "~/github.com/cloud8421/dotfiles"
+
+[dotfiles]
+"~/.config/ghostty/config" = {}
+"~/.config/starship.toml" = {}
+"~/.config/tmux" = {}
+"~/.config/nvim" = {}
+"~/.gitattributes" = {}
+"~/.gitconfig" = {}
+"~/.gitignore_global" = {}

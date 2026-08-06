@@ -1,8 +1,2 @@
-stow -t ~ -v 1 \
-  ghostty \
-  git \
-  starship \
-  tmux \
-  zsh \
-  nvim \
-  pi
+ln -s config.toml ~/.config/mise/config.toml
+mise bootstrap
