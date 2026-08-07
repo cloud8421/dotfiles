@@ -5,4 +5,5 @@ stow -t ~ -v 1 \
   tmux \
   zsh \
   nvim \
+  atuin \
   pi
