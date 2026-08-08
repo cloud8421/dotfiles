@@ -23,6 +23,7 @@
 dotfiles.root = "~/github.com/cloud8421/dotfiles"
 
 [dotfiles]
+"~/.config/atuin/config.toml" = {}
 "~/.config/ghostty/config" = {}
 "~/.config/starship.toml" = {}
 "~/.config/tmux" = {}
