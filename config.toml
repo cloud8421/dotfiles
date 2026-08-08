@@ -1,5 +1,4 @@
 [bootstrap.packages]
-
 "brew-cask:alfred" = "latest"
 "brew-cask:claude" = "latest"
 "brew-cask:claude-code" = "latest"
@@ -31,3 +30,4 @@ dotfiles.root = "~/github.com/cloud8421/dotfiles"
 "~/.gitattributes" = {}
 "~/.gitconfig" = {}
 "~/.gitignore_global" = {}
+"~/.pi" = {}
