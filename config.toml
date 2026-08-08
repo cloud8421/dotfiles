@@ -31,3 +31,9 @@ dotfiles.root = "~/github.com/cloud8421/dotfiles"
 "~/.gitconfig" = {}
 "~/.gitignore_global" = {}
 "~/.pi" = {}
+
+[tools]
+erlang = "29.0.5"
+node = "26.7.0"
+elixir = "1.20.3-otp-29"
+"npm:@mariozechner/pi-coding-agent" = "latest"
