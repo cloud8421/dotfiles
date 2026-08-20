@@ -54,3 +54,8 @@ eval "$(atuin init zsh)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ulimit -n 20480
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/cloud/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
