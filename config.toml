@@ -9,6 +9,7 @@
 "brew-cask:microsoft-teams" = "latest"
 "brew:difftastic" = "latest"
 "brew:eza" = "latest"
+"brew:cliamp" = "latest"
 "brew:fd" = "latest"
 "brew:fzf" = "latest"
 "brew:gdal" = "latest"
