@@ -18,6 +18,9 @@
 "brew:starship" = "latest"
 "brew:tmux" = "latest"
 
+[bootstrap.mise_shell_activate]
+zshrc = "activate"
+
 [settings]
 dotfiles.root = "~/github.com/cloud8421/dotfiles"
 
