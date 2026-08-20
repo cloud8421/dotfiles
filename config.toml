@@ -5,6 +5,8 @@
 "brew-cask:ghostty" = "latest"
 "brew-cask:linear" = "latest"
 "brew-cask:notion" = "latest"
+"brew-cask:slack" = "latest"
+"brew-cask:microsoft-teams" = "latest"
 "brew:difftastic" = "latest"
 "brew:eza" = "latest"
 "brew:fd" = "latest"
