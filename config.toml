@@ -7,6 +7,7 @@
 "brew-cask:notion" = "latest"
 "brew-cask:slack" = "latest"
 "brew-cask:microsoft-teams" = "latest"
+"brew-cask:tailscale-app" = "latest"
 "brew:difftastic" = "latest"
 "brew:eza" = "latest"
 "brew:cliamp" = "latest"
