@@ -1,6 +1,6 @@
 [bootstrap.packages]
 "brew-cask:alfred" = "latest"
-"brew-cask:claude" = "latest"
+"brew-cask:codex" = "latest"
 "brew-cask:claude-code" = "latest"
 "brew-cask:ghostty" = "latest"
 "brew-cask:linear" = "latest"
