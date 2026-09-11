@@ -241,6 +241,8 @@ height = "80%"
 # Hostname, datetime, and command entries resolve on the Herdr server.
 tab_bar_right = [
   {type = "zoom"},
+  {type = "command", command = "top -l 1 -n 0 | awk '/CPU usage/ {printf \"%.0f%%\\n\", 100 - $7}'", interval_seconds = 5},
+  {type = "command", command = "vm_stat | awk -v t=\"$(sysctl -n hw.memsize)\" '/page size of/ {p=$8} /Pages free:/ {f+=$3} /Pages speculative:/ {f+=$3} END {printf \"%.1fG/%.0fG\\n\", (t-f*p)/1073741824, t/1073741824}'", interval_seconds = 5},
   {type = "command", command = "ping -c 1 google.com | tail -1 | awk '{print $4}' | cut -d '/' -f 2 | sed 's/$/ ms/'", interval_seconds = 5},
   {type = "datetime", format = "%m/%d/%Y, %H:%M"},
 ]
