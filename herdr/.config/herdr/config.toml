@@ -246,7 +246,8 @@ tab_bar_right = [
   {type = "command", command = "ping -c 1 google.com | tail -1 | awk '{print $4}' | cut -d '/' -f 2 | sed 's/$/ ms/'", interval_seconds = 5},
   {type = "datetime", format = "%m/%d/%Y, %H:%M"},
 ]
-tab_bar_right_separator = " | "
+
+tab_bar_right_separator = " · "
 
 # Title Herdr writes to the terminal it runs in, which is what window managers
 # show in title, tab, and group bars. Tokens are {hostname}, {workspace}, {tab},
