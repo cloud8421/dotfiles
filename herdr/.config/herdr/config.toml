@@ -29,7 +29,7 @@ onboarding = false
 # red = "#ff6188"
 # green = "#a6e3a1"
 
-name = "one-dark"
+name = "tokyo-night"
 auto_switch = false
 [terminal]
 # Executable used for new interactive panes.
